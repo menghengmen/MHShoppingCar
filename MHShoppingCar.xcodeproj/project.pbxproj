@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BFCEAB0216D932E00299EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAAF216D932E00299EFD /* AppDelegate.m */; };
+		1BFCEAB3216D932E00299EFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAB2216D932E00299EFD /* ViewController.m */; };
+		1BFCEAB6216D932E00299EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFCEAB4216D932E00299EFD /* Main.storyboard */; };
+		1BFCEAB8216D933000299EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFCEAB7216D933000299EFD /* Assets.xcassets */; };
+		1BFCEABB216D933000299EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFCEAB9216D933000299EFD /* LaunchScreen.storyboard */; };
+		1BFCEABE216D933000299EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEABD216D933000299EFD /* main.m */; };
+		1BFCEAC8216D933000299EFD /* MHShoppingCarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAC7216D933000299EFD /* MHShoppingCarTests.m */; };
+		1BFCEAD3216D933000299EFD /* MHShoppingCarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAD2216D933000299EFD /* MHShoppingCarUITests.m */; };
+		1BFCEAE2216D937C00299EFD /* MHShoppingCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAE1216D937C00299EFD /* MHShoppingCarViewController.m */; };
+		1BFCEAE6216DF30900299EFD /* MHShoppingCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAE4216DF30900299EFD /* MHShoppingCarCell.m */; };
+		1BFCEAE7216DF30900299EFD /* MHShoppingCarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BFCEAE5216DF30900299EFD /* MHShoppingCarCell.xib */; };
+		1BFCEAEB216DFD0D00299EFD /* MHChangeCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAEA216DFD0D00299EFD /* MHChangeCountView.m */; };
+		1BFCEAED216E3A4C00299EFD /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BFCEAEC216E3A4C00299EFD /* data.plist */; };
+		1BFCEAF0216E3ADB00299EFD /* MHDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAEF216E3ADB00299EFD /* MHDataManager.m */; };
+		1BFCEAF3216E3B8300299EFD /* MHShopCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAF2216E3B8300299EFD /* MHShopCarModel.m */; };
+		2DFF323B677ADD1DE1D958BB /* libPods-MHShoppingCarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E994BA0A775F68BDDE06BC19 /* libPods-MHShoppingCarTests.a */; };
+		B79EF99FB51C9C28563B214C /* libPods-MHShoppingCarUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 933AD726EF4D2E53272A8733 /* libPods-MHShoppingCarUITests.a */; };
+		CE2CD10E8B4258DC4457C88B /* libPods-MHShoppingCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960CC5CB4D3FB00CF2CFB2E5 /* libPods-MHShoppingCar.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BFCEAC4216D933000299EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BFCEAA3216D932E00299EFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BFCEAAA216D932E00299EFD;
+			remoteInfo = MHShoppingCar;
+		};
+		1BFCEACF216D933000299EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BFCEAA3216D932E00299EFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BFCEAAA216D932E00299EFD;
+			remoteInfo = MHShoppingCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BFCEAAB216D932E00299EFD /* MHShoppingCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHShoppingCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFCEAAE216D932E00299EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1BFCEAAF216D932E00299EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1BFCEAB1216D932E00299EFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1BFCEAB2216D932E00299EFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1BFCEAB5216D932E00299EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BFCEAB7216D933000299EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BFCEABA216D933000299EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BFCEABC216D933000299EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BFCEABD216D933000299EFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BFCEAC3216D933000299EFD /* MHShoppingCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHShoppingCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFCEAC7216D933000299EFD /* MHShoppingCarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShoppingCarTests.m; sourceTree = "<group>"; };
+		1BFCEAC9216D933000299EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BFCEACE216D933000299EFD /* MHShoppingCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHShoppingCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFCEAD2216D933000299EFD /* MHShoppingCarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShoppingCarUITests.m; sourceTree = "<group>"; };
+		1BFCEAD4216D933000299EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BFCEAE0216D937C00299EFD /* MHShoppingCarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHShoppingCarViewController.h; sourceTree = "<group>"; };
+		1BFCEAE1216D937C00299EFD /* MHShoppingCarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShoppingCarViewController.m; sourceTree = "<group>"; };
+		1BFCEAE3216DF30900299EFD /* MHShoppingCarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHShoppingCarCell.h; sourceTree = "<group>"; };
+		1BFCEAE4216DF30900299EFD /* MHShoppingCarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShoppingCarCell.m; sourceTree = "<group>"; };
+		1BFCEAE5216DF30900299EFD /* MHShoppingCarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHShoppingCarCell.xib; sourceTree = "<group>"; };
+		1BFCEAE9216DFD0D00299EFD /* MHChangeCountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHChangeCountView.h; sourceTree = "<group>"; };
+		1BFCEAEA216DFD0D00299EFD /* MHChangeCountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHChangeCountView.m; sourceTree = "<group>"; };
+		1BFCEAEC216E3A4C00299EFD /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		1BFCEAEE216E3ADB00299EFD /* MHDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHDataManager.h; sourceTree = "<group>"; };
+		1BFCEAEF216E3ADB00299EFD /* MHDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHDataManager.m; sourceTree = "<group>"; };
+		1BFCEAF1216E3B8300299EFD /* MHShopCarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHShopCarModel.h; sourceTree = "<group>"; };
+		1BFCEAF2216E3B8300299EFD /* MHShopCarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShopCarModel.m; sourceTree = "<group>"; };
+		37F65CD28B472D85FC8E9DA9 /* Pods-MHShoppingCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHShoppingCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHShoppingCar/Pods-MHShoppingCar.debug.xcconfig"; sourceTree = "<group>"; };
+		7628BED019AC701B8F413B99 /* Pods-MHShoppingCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHShoppingCarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHShoppingCarUITests/Pods-MHShoppingCarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		933AD726EF4D2E53272A8733 /* libPods-MHShoppingCarUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHShoppingCarUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960CC5CB4D3FB00CF2CFB2E5 /* libPods-MHShoppingCar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHShoppingCar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		999132D52D82976E361BDBED /* Pods-MHShoppingCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHShoppingCarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHShoppingCarUITests/Pods-MHShoppingCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC3CAC05281D723E2B9E20D7 /* Pods-MHShoppingCarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHShoppingCarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHShoppingCarTests/Pods-MHShoppingCarTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE54D9136F47DB69DF6EB721 /* Pods-MHShoppingCarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHShoppingCarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHShoppingCarTests/Pods-MHShoppingCarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBDA17978DEFCEA9386C1E05 /* Pods-MHShoppingCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHShoppingCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHShoppingCar/Pods-MHShoppingCar.release.xcconfig"; sourceTree = "<group>"; };
+		E994BA0A775F68BDDE06BC19 /* libPods-MHShoppingCarTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHShoppingCarTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BFCEAA8216D932E00299EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2CD10E8B4258DC4457C88B /* libPods-MHShoppingCar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BFCEAC0216D933000299EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFF323B677ADD1DE1D958BB /* libPods-MHShoppingCarTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BFCEACB216D933000299EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B79EF99FB51C9C28563B214C /* libPods-MHShoppingCarUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BFCEAA2216D932E00299EFD = {
+			isa = PBXGroup;
+			children = (
+				1BFCEAAD216D932E00299EFD /* MHShoppingCar */,
+				1BFCEAC6216D933000299EFD /* MHShoppingCarTests */,
+				1BFCEAD1216D933000299EFD /* MHShoppingCarUITests */,
+				1BFCEAAC216D932E00299EFD /* Products */,
+				4CF0CB9398CECF0A6DC475E2 /* Pods */,
+				6212381C21ABFABC540FE851 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1BFCEAAC216D932E00299EFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BFCEAAB216D932E00299EFD /* MHShoppingCar.app */,
+				1BFCEAC3216D933000299EFD /* MHShoppingCarTests.xctest */,
+				1BFCEACE216D933000299EFD /* MHShoppingCarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BFCEAAD216D932E00299EFD /* MHShoppingCar */ = {
+			isa = PBXGroup;
+			children = (
+				1BFCEAEC216E3A4C00299EFD /* data.plist */,
+				1BFCEAF4216E3B9200299EFD /* Model */,
+				1BFCEAE8216DFCF200299EFD /* View */,
+				1BFCEAAE216D932E00299EFD /* AppDelegate.h */,
+				1BFCEAAF216D932E00299EFD /* AppDelegate.m */,
+				1BFCEAB1216D932E00299EFD /* ViewController.h */,
+				1BFCEAB2216D932E00299EFD /* ViewController.m */,
+				1BFCEAEE216E3ADB00299EFD /* MHDataManager.h */,
+				1BFCEAEF216E3ADB00299EFD /* MHDataManager.m */,
+				1BFCEAE0216D937C00299EFD /* MHShoppingCarViewController.h */,
+				1BFCEAE1216D937C00299EFD /* MHShoppingCarViewController.m */,
+				1BFCEAB4216D932E00299EFD /* Main.storyboard */,
+				1BFCEAB7216D933000299EFD /* Assets.xcassets */,
+				1BFCEAB9216D933000299EFD /* LaunchScreen.storyboard */,
+				1BFCEABC216D933000299EFD /* Info.plist */,
+				1BFCEABD216D933000299EFD /* main.m */,
+			);
+			path = MHShoppingCar;
+			sourceTree = "<group>";
+		};
+		1BFCEAC6216D933000299EFD /* MHShoppingCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BFCEAC7216D933000299EFD /* MHShoppingCarTests.m */,
+				1BFCEAC9216D933000299EFD /* Info.plist */,
+			);
+			path = MHShoppingCarTests;
+			sourceTree = "<group>";
+		};
+		1BFCEAD1216D933000299EFD /* MHShoppingCarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BFCEAD2216D933000299EFD /* MHShoppingCarUITests.m */,
+				1BFCEAD4216D933000299EFD /* Info.plist */,
+			);
+			path = MHShoppingCarUITests;
+			sourceTree = "<group>";
+		};
+		1BFCEAE8216DFCF200299EFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BFCEAE3216DF30900299EFD /* MHShoppingCarCell.h */,
+				1BFCEAE4216DF30900299EFD /* MHShoppingCarCell.m */,
+				1BFCEAE5216DF30900299EFD /* MHShoppingCarCell.xib */,
+				1BFCEAE9216DFD0D00299EFD /* MHChangeCountView.h */,
+				1BFCEAEA216DFD0D00299EFD /* MHChangeCountView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BFCEAF4216E3B9200299EFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BFCEAF1216E3B8300299EFD /* MHShopCarModel.h */,
+				1BFCEAF2216E3B8300299EFD /* MHShopCarModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CF0CB9398CECF0A6DC475E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37F65CD28B472D85FC8E9DA9 /* Pods-MHShoppingCar.debug.xcconfig */,
+				DBDA17978DEFCEA9386C1E05 /* Pods-MHShoppingCar.release.xcconfig */,
+				CE54D9136F47DB69DF6EB721 /* Pods-MHShoppingCarTests.debug.xcconfig */,
+				BC3CAC05281D723E2B9E20D7 /* Pods-MHShoppingCarTests.release.xcconfig */,
+				999132D52D82976E361BDBED /* Pods-MHShoppingCarUITests.debug.xcconfig */,
+				7628BED019AC701B8F413B99 /* Pods-MHShoppingCarUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6212381C21ABFABC540FE851 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				960CC5CB4D3FB00CF2CFB2E5 /* libPods-MHShoppingCar.a */,
+				E994BA0A775F68BDDE06BC19 /* libPods-MHShoppingCarTests.a */,
+				933AD726EF4D2E53272A8733 /* libPods-MHShoppingCarUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BFCEAAA216D932E00299EFD /* MHShoppingCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BFCEAD7216D933000299EFD /* Build configuration list for PBXNativeTarget "MHShoppingCar" */;
+			buildPhases = (
+				454C250D89B8C5C3AE80B218 /* [CP] Check Pods Manifest.lock */,
+				1BFCEAA7216D932E00299EFD /* Sources */,
+				1BFCEAA8216D932E00299EFD /* Frameworks */,
+				1BFCEAA9216D932E00299EFD /* Resources */,
+				677DF8F71B8D1908C047D30A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MHShoppingCar;
+			productName = MHShoppingCar;
+			productReference = 1BFCEAAB216D932E00299EFD /* MHShoppingCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BFCEAC2216D933000299EFD /* MHShoppingCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BFCEADA216D933000299EFD /* Build configuration list for PBXNativeTarget "MHShoppingCarTests" */;
+			buildPhases = (
+				156326264A97862FC42C44E4 /* [CP] Check Pods Manifest.lock */,
+				1BFCEABF216D933000299EFD /* Sources */,
+				1BFCEAC0216D933000299EFD /* Frameworks */,
+				1BFCEAC1216D933000299EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BFCEAC5216D933000299EFD /* PBXTargetDependency */,
+			);
+			name = MHShoppingCarTests;
+			productName = MHShoppingCarTests;
+			productReference = 1BFCEAC3216D933000299EFD /* MHShoppingCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BFCEACD216D933000299EFD /* MHShoppingCarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BFCEADD216D933000299EFD /* Build configuration list for PBXNativeTarget "MHShoppingCarUITests" */;
+			buildPhases = (
+				FDC57CD9A4F210B261D05FC4 /* [CP] Check Pods Manifest.lock */,
+				1BFCEACA216D933000299EFD /* Sources */,
+				1BFCEACB216D933000299EFD /* Frameworks */,
+				1BFCEACC216D933000299EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BFCEAD0216D933000299EFD /* PBXTargetDependency */,
+			);
+			name = MHShoppingCarUITests;
+			productName = MHShoppingCarUITests;
+			productReference = 1BFCEACE216D933000299EFD /* MHShoppingCarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BFCEAA3216D932E00299EFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = MengHeng;
+				TargetAttributes = {
+					1BFCEAAA216D932E00299EFD = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					1BFCEAC2216D933000299EFD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1BFCEAAA216D932E00299EFD;
+					};
+					1BFCEACD216D933000299EFD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1BFCEAAA216D932E00299EFD;
+					};
+				};
+			};
+			buildConfigurationList = 1BFCEAA6216D932E00299EFD /* Build configuration list for PBXProject "MHShoppingCar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BFCEAA2216D932E00299EFD;
+			productRefGroup = 1BFCEAAC216D932E00299EFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BFCEAAA216D932E00299EFD /* MHShoppingCar */,
+				1BFCEAC2216D933000299EFD /* MHShoppingCarTests */,
+				1BFCEACD216D933000299EFD /* MHShoppingCarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BFCEAA9216D932E00299EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFCEABB216D933000299EFD /* LaunchScreen.storyboard in Resources */,
+				1BFCEAE7216DF30900299EFD /* MHShoppingCarCell.xib in Resources */,
+				1BFCEAB8216D933000299EFD /* Assets.xcassets in Resources */,
+				1BFCEAED216E3A4C00299EFD /* data.plist in Resources */,
+				1BFCEAB6216D932E00299EFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BFCEAC1216D933000299EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BFCEACC216D933000299EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		156326264A97862FC42C44E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MHShoppingCarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		454C250D89B8C5C3AE80B218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MHShoppingCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		677DF8F71B8D1908C047D30A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MHShoppingCar/Pods-MHShoppingCar-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHShoppingCar/Pods-MHShoppingCar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC57CD9A4F210B261D05FC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MHShoppingCarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BFCEAA7216D932E00299EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFCEAB3216D932E00299EFD /* ViewController.m in Sources */,
+				1BFCEAF3216E3B8300299EFD /* MHShopCarModel.m in Sources */,
+				1BFCEAF0216E3ADB00299EFD /* MHDataManager.m in Sources */,
+				1BFCEAE6216DF30900299EFD /* MHShoppingCarCell.m in Sources */,
+				1BFCEABE216D933000299EFD /* main.m in Sources */,
+				1BFCEAEB216DFD0D00299EFD /* MHChangeCountView.m in Sources */,
+				1BFCEAE2216D937C00299EFD /* MHShoppingCarViewController.m in Sources */,
+				1BFCEAB0216D932E00299EFD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BFCEABF216D933000299EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFCEAC8216D933000299EFD /* MHShoppingCarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BFCEACA216D933000299EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFCEAD3216D933000299EFD /* MHShoppingCarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BFCEAC5216D933000299EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BFCEAAA216D932E00299EFD /* MHShoppingCar */;
+			targetProxy = 1BFCEAC4216D933000299EFD /* PBXContainerItemProxy */;
+		};
+		1BFCEAD0216D933000299EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BFCEAAA216D932E00299EFD /* MHShoppingCar */;
+			targetProxy = 1BFCEACF216D933000299EFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BFCEAB4216D932E00299EFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BFCEAB5216D932E00299EFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BFCEAB9216D933000299EFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BFCEABA216D933000299EFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BFCEAD5216D933000299EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BFCEAD6216D933000299EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BFCEAD8216D933000299EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F65CD28B472D85FC8E9DA9 /* Pods-MHShoppingCar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MHShoppingCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yudao.MHShoppingCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BFCEAD9216D933000299EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBDA17978DEFCEA9386C1E05 /* Pods-MHShoppingCar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MHShoppingCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yudao.MHShoppingCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BFCEADB216D933000299EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE54D9136F47DB69DF6EB721 /* Pods-MHShoppingCarTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MHShoppingCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yudao.MHShoppingCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHShoppingCar.app/MHShoppingCar";
+			};
+			name = Debug;
+		};
+		1BFCEADC216D933000299EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC3CAC05281D723E2B9E20D7 /* Pods-MHShoppingCarTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MHShoppingCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yudao.MHShoppingCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHShoppingCar.app/MHShoppingCar";
+			};
+			name = Release;
+		};
+		1BFCEADE216D933000299EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 999132D52D82976E361BDBED /* Pods-MHShoppingCarUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MHShoppingCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yudao.MHShoppingCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MHShoppingCar;
+			};
+			name = Debug;
+		};
+		1BFCEADF216D933000299EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7628BED019AC701B8F413B99 /* Pods-MHShoppingCarUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MHShoppingCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yudao.MHShoppingCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MHShoppingCar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BFCEAA6216D932E00299EFD /* Build configuration list for PBXProject "MHShoppingCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BFCEAD5216D933000299EFD /* Debug */,
+				1BFCEAD6216D933000299EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BFCEAD7216D933000299EFD /* Build configuration list for PBXNativeTarget "MHShoppingCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BFCEAD8216D933000299EFD /* Debug */,
+				1BFCEAD9216D933000299EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BFCEADA216D933000299EFD /* Build configuration list for PBXNativeTarget "MHShoppingCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BFCEADB216D933000299EFD /* Debug */,
+				1BFCEADC216D933000299EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BFCEADD216D933000299EFD /* Build configuration list for PBXNativeTarget "MHShoppingCarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BFCEADE216D933000299EFD /* Debug */,
+				1BFCEADF216D933000299EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BFCEAA3216D932E00299EFD /* Project object */;
+}
