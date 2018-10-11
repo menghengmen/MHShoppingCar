@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "MHShopCarModel.h"
+
+@protocol CellDelegate <NSObject>
+
+-(void)changeGoodCountClick;///改变商品数量
+
+@end
+
 @interface MHShoppingCarCell : UITableViewCell
 @property (nonatomic,strong) MHShopCarModel *model;
+@property (nonatomic,weak)  id<CellDelegate>delegate;
 @end
 

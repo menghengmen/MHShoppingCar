@@ -10,6 +10,17 @@
 
 @implementation MHShopCarModel
 
+-(void)setManager:(MHDataManager *)manager{
+    _manager = manager;
+    [self addObserver:manager forKeyPath:@"isSelect" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+    
+}
+
+-(void)dealloc{
+    [self removeObserver:_manager forKeyPath:@"isSelect"];
+}
+
+
 @end
 
 @implementation MHItemInfoModel

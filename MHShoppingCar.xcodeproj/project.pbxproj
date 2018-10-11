@@ -22,6 +22,7 @@
 		1BFCEAED216E3A4C00299EFD /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BFCEAEC216E3A4C00299EFD /* data.plist */; };
 		1BFCEAF0216E3ADB00299EFD /* MHDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAEF216E3ADB00299EFD /* MHDataManager.m */; };
 		1BFCEAF3216E3B8300299EFD /* MHShopCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAF2216E3B8300299EFD /* MHShopCarModel.m */; };
+		1BFCEAF7216EE18C00299EFD /* MHShoppingCarBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAF6216EE18C00299EFD /* MHShoppingCarBottomView.m */; };
 		2DFF323B677ADD1DE1D958BB /* libPods-MHShoppingCarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E994BA0A775F68BDDE06BC19 /* libPods-MHShoppingCarTests.a */; };
 		B79EF99FB51C9C28563B214C /* libPods-MHShoppingCarUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 933AD726EF4D2E53272A8733 /* libPods-MHShoppingCarUITests.a */; };
 		CE2CD10E8B4258DC4457C88B /* libPods-MHShoppingCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960CC5CB4D3FB00CF2CFB2E5 /* libPods-MHShoppingCar.a */; };
@@ -73,6 +74,8 @@
 		1BFCEAEF216E3ADB00299EFD /* MHDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHDataManager.m; sourceTree = "<group>"; };
 		1BFCEAF1216E3B8300299EFD /* MHShopCarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHShopCarModel.h; sourceTree = "<group>"; };
 		1BFCEAF2216E3B8300299EFD /* MHShopCarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShopCarModel.m; sourceTree = "<group>"; };
+		1BFCEAF5216EE18C00299EFD /* MHShoppingCarBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHShoppingCarBottomView.h; sourceTree = "<group>"; };
+		1BFCEAF6216EE18C00299EFD /* MHShoppingCarBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShoppingCarBottomView.m; sourceTree = "<group>"; };
 		37F65CD28B472D85FC8E9DA9 /* Pods-MHShoppingCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHShoppingCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHShoppingCar/Pods-MHShoppingCar.debug.xcconfig"; sourceTree = "<group>"; };
 		7628BED019AC701B8F413B99 /* Pods-MHShoppingCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHShoppingCarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHShoppingCarUITests/Pods-MHShoppingCarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		933AD726EF4D2E53272A8733 /* libPods-MHShoppingCarUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHShoppingCarUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				1BFCEAEC216E3A4C00299EFD /* data.plist */,
+				1BFCEAF8216EE2EE00299EFD /* Controller */,
 				1BFCEAF4216E3B9200299EFD /* Model */,
 				1BFCEAE8216DFCF200299EFD /* View */,
 				1BFCEAAE216D932E00299EFD /* AppDelegate.h */,
@@ -146,8 +150,6 @@
 				1BFCEAB2216D932E00299EFD /* ViewController.m */,
 				1BFCEAEE216E3ADB00299EFD /* MHDataManager.h */,
 				1BFCEAEF216E3ADB00299EFD /* MHDataManager.m */,
-				1BFCEAE0216D937C00299EFD /* MHShoppingCarViewController.h */,
-				1BFCEAE1216D937C00299EFD /* MHShoppingCarViewController.m */,
 				1BFCEAB4216D932E00299EFD /* Main.storyboard */,
 				1BFCEAB7216D933000299EFD /* Assets.xcassets */,
 				1BFCEAB9216D933000299EFD /* LaunchScreen.storyboard */,
@@ -183,6 +185,8 @@
 				1BFCEAE5216DF30900299EFD /* MHShoppingCarCell.xib */,
 				1BFCEAE9216DFD0D00299EFD /* MHChangeCountView.h */,
 				1BFCEAEA216DFD0D00299EFD /* MHChangeCountView.m */,
+				1BFCEAF5216EE18C00299EFD /* MHShoppingCarBottomView.h */,
+				1BFCEAF6216EE18C00299EFD /* MHShoppingCarBottomView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +198,15 @@
 				1BFCEAF2216E3B8300299EFD /* MHShopCarModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1BFCEAF8216EE2EE00299EFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BFCEAE0216D937C00299EFD /* MHShoppingCarViewController.h */,
+				1BFCEAE1216D937C00299EFD /* MHShoppingCarViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		4CF0CB9398CECF0A6DC475E2 /* Pods */ = {
@@ -437,6 +450,7 @@
 				1BFCEABE216D933000299EFD /* main.m in Sources */,
 				1BFCEAEB216DFD0D00299EFD /* MHChangeCountView.m in Sources */,
 				1BFCEAE2216D937C00299EFD /* MHShoppingCarViewController.m in Sources */,
+				1BFCEAF7216EE18C00299EFD /* MHShoppingCarBottomView.m in Sources */,
 				1BFCEAB0216D932E00299EFD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +625,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MHShoppingCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,6 +643,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MHShoppingCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

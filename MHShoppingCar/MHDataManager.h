@@ -10,8 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^numPriceBlock)(void);
+
+
 @interface MHDataManager : NSObject
--(void)getShopCarData:(void(^)(NSArray*commonArr,NSArray *luxuryArr))shopDataBlock;
+
+@property(nonatomic,copy) numPriceBlock priceBlock;
+-(void)getShopCarData:(void(^)(NSArray*commonArr,NSArray *luxuryArr))shopDataBlock
+           priceBlock:(void(^)(void))priceBlock;
 @end
 
 NS_ASSUME_NONNULL_END

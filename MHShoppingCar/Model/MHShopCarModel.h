@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MHDataManager.h"
 @class MHItemInfoModel;
 
 @interface MHShopCarModel : NSObject
 @property(nonatomic,copy) NSString *count;//数量
 @property(nonatomic,copy) NSString *item_id;//
 @property(nonatomic,strong) MHItemInfoModel *item_info;//详情
+@property(nonatomic,strong) MHDataManager *manager;///观察者
+@property(nonatomic,assign)BOOL isSelect;
+
 
 
 @end

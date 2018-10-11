@@ -50,6 +50,7 @@
     self.selectBt = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, btimg.size.width +20, 44)];
     [self.selectBt setImage:btimg forState:UIControlStateNormal];
     [self.selectBt setImage:selectImg forState:UIControlStateSelected];
+    [self.selectBt addTarget:self action:@selector(selectBtClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.selectBt];
     
     
@@ -89,15 +90,27 @@
 
 
 #pragma  mark Action
+
+-(void)selectBtClick:(UIButton*)btn{
+    _selectBt.selected = !_selectBt.selected;
+    _model.isSelect = btn.selected;
+    
+}
 -(void)addAccount{
     self.goodAccount ++;
     self.changeCountView.accountTextField.text = [NSString stringWithFormat:@"%ld",(long)self.goodAccount];
+    _model.count = self.changeCountView.accountTextField.text;
+    [self.delegate changeGoodCountClick];
     
 }
 
 -(void)reduceAccount{
     self.goodAccount --;
     self.changeCountView.accountTextField.text = [NSString stringWithFormat:@"%ld",(long)self.goodAccount];
+    _model.count = self.changeCountView.accountTextField.text;
+    [self.delegate changeGoodCountClick];
+
+    
     
 }
 
