@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MHShoppingCarViewController.h"
+#import "MHShopCarVC.h"
 @interface ViewController ()
 
 @end
@@ -23,5 +24,10 @@
     [self.navigationController pushViewController:[MHShoppingCarViewController new] animated:YES];
 
 }
+- (IBAction)Click2:(UIButton *)sender {
+   [self.navigationController pushViewController:[MHShopCarVC new] animated:YES];
+
+}
+
 
 @end

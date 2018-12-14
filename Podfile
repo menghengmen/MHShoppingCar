@@ -8,10 +8,11 @@ target 'MHShoppingCar' do
   # Pods for MHShoppingCar
 
  
-pod 'SDWebImage'
+ pod 'SDWebImage'
  pod 'AFNetworking', '~> 3.0'
  pod 'MJExtension'
- pod 'MJRefresh'  
+ pod 'MJRefresh'
+ pod 'Masonry'
 
  target 'MHShoppingCarTests' do
     inherit! :search_paths
