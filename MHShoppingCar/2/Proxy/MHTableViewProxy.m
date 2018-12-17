@@ -10,6 +10,7 @@
 #import "MHShopCarCell.h"
 #import "MHBrandModel.h"
 #import "MHProductModel.h"
+#import "MHShopCarHeaderView.h"
 
 @implementation MHTableViewProxy
 
@@ -30,7 +31,7 @@
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-   MHBrandModel *brandModel  = self.dataArray[section];
+    MHBrandModel *brandModel  = self.dataArray[section];
     NSArray *productArray = brandModel.products;
 
     return productArray.count;
@@ -41,4 +42,20 @@
 }
 
 
+#pragma mark UITableViewDelegate
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    MHShopCarHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"MHShopCarHeaderView"];
+    if (headerView != nil) {
+        MHBrandModel *brandModel  = self.dataArray[section];
+        [headerView configShopHeaderViewWithBrandname:brandModel.brandName brandSelect:brandModel.isSelect];
+
+    }
+    
+    return headerView;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 40;
+}
 @end

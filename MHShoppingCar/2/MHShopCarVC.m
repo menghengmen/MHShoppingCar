@@ -8,6 +8,7 @@
 
 #import "MHShopCarVC.h"
 #import "MHShopCarCell.h"
+#import "MHShopCarHeaderView.h"
 #import "MHTableViewProxy.h"
 #import "MHShopCarFormat.h"
 #import <Masonry/Masonry.h>
@@ -64,9 +65,11 @@
     if (!_shopCarTableView) {
         _shopCarTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         [_shopCarTableView registerClass:[MHShopCarCell class] forCellReuseIdentifier:@"MHShopCarCell"];
+        [_shopCarTableView registerClass:[MHShopCarHeaderView class] forHeaderFooterViewReuseIdentifier:@"MHShopCarHeaderView"];
         _shopCarTableView.rowHeight = 120;
         _shopCarTableView.delegate = self.mhProxy;
         _shopCarTableView.dataSource = self.mhProxy;
+        _shopCarTableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];
         
     }
     

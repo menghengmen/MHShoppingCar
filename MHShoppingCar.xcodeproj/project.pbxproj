@@ -15,6 +15,7 @@
 		1B73F62521C395E9009494B5 /* MHBrandModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73F62421C395E9009494B5 /* MHBrandModel.m */; };
 		1B73F62921C398BF009494B5 /* MHShopCarFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73F62821C398BF009494B5 /* MHShopCarFormat.m */; };
 		1B73F62B21C399BA009494B5 /* shopcart.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B73F62A21C399BA009494B5 /* shopcart.plist */; };
+		1B73F62E21C3A30A009494B5 /* MHShopCarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73F62D21C3A30A009494B5 /* MHShopCarHeaderView.m */; };
 		1BFCEAB0216D932E00299EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAAF216D932E00299EFD /* AppDelegate.m */; };
 		1BFCEAB3216D932E00299EFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCEAB2216D932E00299EFD /* ViewController.m */; };
 		1BFCEAB6216D932E00299EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFCEAB4216D932E00299EFD /* Main.storyboard */; };
@@ -68,6 +69,8 @@
 		1B73F62721C398BF009494B5 /* MHShopCarFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHShopCarFormat.h; sourceTree = "<group>"; };
 		1B73F62821C398BF009494B5 /* MHShopCarFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShopCarFormat.m; sourceTree = "<group>"; };
 		1B73F62A21C399BA009494B5 /* shopcart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shopcart.plist; sourceTree = "<group>"; };
+		1B73F62C21C3A30A009494B5 /* MHShopCarHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHShopCarHeaderView.h; sourceTree = "<group>"; };
+		1B73F62D21C3A30A009494B5 /* MHShopCarHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShopCarHeaderView.m; sourceTree = "<group>"; };
 		1BFCEAAB216D932E00299EFD /* MHShoppingCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHShoppingCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFCEAAE216D932E00299EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BFCEAAF216D932E00299EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				1B73F61521C3907B009494B5 /* MHShopCarCell.h */,
 				1B73F61621C3907B009494B5 /* MHShopCarCell.m */,
 				1B73F61721C3907B009494B5 /* MHShopCarCell.xib */,
+				1B73F62C21C3A30A009494B5 /* MHShopCarHeaderView.h */,
+				1B73F62D21C3A30A009494B5 /* MHShopCarHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -538,6 +543,7 @@
 				1BFCEABE216D933000299EFD /* main.m in Sources */,
 				1BFCEAEB216DFD0D00299EFD /* MHChangeCountView.m in Sources */,
 				1B73F62121C395B8009494B5 /* MHProductModel.m in Sources */,
+				1B73F62E21C3A30A009494B5 /* MHShopCarHeaderView.m in Sources */,
 				1B73F61E21C39316009494B5 /* MHTableViewProxy.m in Sources */,
 				1B73F61821C3907B009494B5 /* MHShopCarCell.m in Sources */,
 				1BFCEAE2216D937C00299EFD /* MHShoppingCarViewController.m in Sources */,

@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableArray<MHProductModel *> *products;
 
 @property (nonatomic, copy) NSString *brandName;
+
+@property (nonatomic, assign) BOOL isSelect; /// 自定义
 @end
 
 NS_ASSUME_NONNULL_END
