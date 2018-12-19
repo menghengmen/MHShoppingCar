@@ -23,5 +23,14 @@
     [self.delegate shopCarFormatRequestData:self.shopcartListArray];
     
 }
+-(void)selectBrandWithSection:(NSInteger)section isSelected:(BOOL)selected{
+    MHBrandModel *brand = self.shopcartListArray[section];
+    brand.isSelect = selected;
+    for (MHProductModel *productModel in brand.products) {
+        productModel.isSelected = brand.isSelect;
+    }
+    [self.delegate shopCarBrandSelected];
+
+}
 
 @end

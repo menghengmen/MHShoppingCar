@@ -40,6 +40,9 @@
 
 -(void)allSelectButtonAction{
     self.allSelectBtn.selected = !self.allSelectBtn.selected;
+    if (self.headerViewBlock != nil) {
+        self.headerViewBlock(self.allSelectBtn.selected);
+    }
 }
 
 -(void)layoutSubviews{

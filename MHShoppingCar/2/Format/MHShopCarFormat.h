@@ -13,6 +13,8 @@
 
 @required
 -(void)shopCarFormatRequestData:(NSMutableArray*)dataArray;
+-(void)shopCarBrandSelected;/// 品牌选择
+
 
 @end
 
@@ -20,5 +22,6 @@
 @interface MHShopCarFormat : NSObject
 @property (nonatomic,weak) id<MHShopCarFormatDelegate>delegate;
 -(void)requestShopCarData;/// 请求购物车数据
+-(void)selectBrandWithSection:(NSInteger)section isSelected:(BOOL)selected;/// 选中反选m某个品牌
 @end
 

@@ -24,7 +24,7 @@
         MHProductModel *productModel = productArray[indexPath.row];
         NSString *productName = [NSString stringWithFormat:@"%@%@%@", brandModel.brandName, productModel.productStyle, productModel.productType];
         NSString *productSize = [NSString stringWithFormat:@"W:%ld H:%ld D:%ld", productModel.specWidth, productModel.specHeight, productModel.specLength];
-        [cell configureShopcartCellWithProductURL:productModel.productPicUri productName:productName productSize:productSize productPrice:productModel.productPrice productCount:productModel.productQty productStock:productModel.productStocks productSelected:YES];
+        [cell configureShopcartCellWithProductURL:productModel.productPicUri productName:productName productSize:productSize productPrice:productModel.productPrice productCount:productModel.productQty productStock:productModel.productStocks productSelected:productModel.isSelected];
     }
     return cell;
     
@@ -51,7 +51,12 @@
         [headerView configShopHeaderViewWithBrandname:brandModel.brandName brandSelect:brandModel.isSelect];
 
     }
-    
+    __weak typeof (self) WeakSelf = self;
+    headerView.headerViewBlock = ^(BOOL isSelected) {
+        if (WeakSelf.brandSelectBlock) {
+            WeakSelf.brandSelectBlock(isSelected, section);
+        }
+    };
     return headerView;
 }
 

@@ -46,6 +46,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *productPicUri;   //图片url
 
+@property (nonatomic, assign) BOOL isSelected;       //是否选中  （自定义）
+
 @end
 
 NS_ASSUME_NONNULL_END

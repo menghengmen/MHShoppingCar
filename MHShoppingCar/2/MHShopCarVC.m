@@ -42,11 +42,18 @@
     self.mhProxy.dataArray = dataArray;
     [self.shopCarTableView reloadData];
 }
+-(void)shopCarBrandSelected{
+    [self.shopCarTableView reloadData];
+}
 
 #pragma mark lazy init
 -(MHTableViewProxy*)mhProxy{
     if (!_mhProxy) {
         _mhProxy = [MHTableViewProxy new];
+        __weak typeof (self) WeakSelf = self;
+        _mhProxy.brandSelectBlock = ^(BOOL isSelect, NSInteger interger) {
+            [WeakSelf.format selectBrandWithSection:interger isSelected:isSelect];
+        };
     }
     return _mhProxy;
 }
@@ -59,7 +66,6 @@
     return _format;
     
 }
-
 
 -(UITableView*)shopCarTableView{
     if (!_shopCarTableView) {
