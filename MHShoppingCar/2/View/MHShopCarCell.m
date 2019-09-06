@@ -66,6 +66,9 @@
 
 
 - (void)productSelectButtonAction {
+    if (self.productBlock) {
+        self.productBlock(self.productSelectButton.selected);
+    }
     self.productSelectButton.selected = !self.productSelectButton.isSelected;
    
 }

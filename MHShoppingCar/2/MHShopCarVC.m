@@ -46,6 +46,8 @@
     [self.shopCarTableView reloadData];
 }
 
+
+
 #pragma mark lazy init
 -(MHTableViewProxy*)mhProxy{
     if (!_mhProxy) {

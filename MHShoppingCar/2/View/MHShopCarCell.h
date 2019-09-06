@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^productSelectBlock)(BOOL isSelected);
+
 @interface MHShopCarCell : UITableViewCell
+
+@property (nonatomic,strong)  productSelectBlock productBlock;
 
 - (void)configureShopcartCellWithProductURL:(NSString *)productURL
                                 productName:(NSString *)productName

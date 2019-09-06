@@ -18,6 +18,12 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     MHShopCarCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MHShopCarCell"];
+    cell.productBlock = ^(BOOL isSelected) {
+        if (self.productSelectBlock) {
+            self.productSelectBlock(isSelected, indexPath);
+        }
+    };
+    
     MHBrandModel *brandModel = self.dataArray[indexPath.section];
     NSArray *productArray = brandModel.products;
     if (productArray.count > indexPath.row) {
