@@ -33,4 +33,10 @@
 
 }
 
+-(void)selectProductWith:(NSIndexPath *)index isSelected:(BOOL)selected{
+    
+
+
+}
+
 @end

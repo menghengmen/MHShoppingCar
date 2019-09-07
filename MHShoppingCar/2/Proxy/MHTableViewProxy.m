@@ -18,9 +18,10 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     MHShopCarCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MHShopCarCell"];
+    __weak typeof (self) WeakSelf = self;
     cell.productBlock = ^(BOOL isSelected) {
-        if (self.productSelectBlock) {
-            self.productSelectBlock(isSelected, indexPath);
+        if (WeakSelf.productSelectBlock) {
+            WeakSelf.productSelectBlock(isSelected, indexPath);
         }
     };
     

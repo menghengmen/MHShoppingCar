@@ -56,6 +56,10 @@
         _mhProxy.brandSelectBlock = ^(BOOL isSelect, NSInteger interger) {
             [WeakSelf.format selectBrandWithSection:interger isSelected:isSelect];
         };
+        _mhProxy.productSelectBlock = ^(BOOL isSelect, NSIndexPath *indexpath) {
+            [WeakSelf.format selectProductWith:indexpath isSelected:isSelect];
+        };
+        
     }
     return _mhProxy;
 }

@@ -23,5 +23,7 @@
 @property (nonatomic,weak) id<MHShopCarFormatDelegate>delegate;
 -(void)requestShopCarData;/// 请求购物车数据
 -(void)selectBrandWithSection:(NSInteger)section isSelected:(BOOL)selected;/// 选中反选m某个品牌
+-(void)selectProductWith:(NSIndexPath*)index isSelected:(BOOL)selected;/// 选中某个商品
+
 @end
 
