@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef void(^shopCarProxyProductSelectBlock)(BOOL isSelect ,NSIndexPath* _Nullable indexpath);//商品选择
+typedef void(^shopCarProxyProductSelectBlock)(BOOL isSelect ,NSIndexPath*  indexpath);//商品选择
 typedef void(^shopCarProxyBrandSelectBlock)(BOOL isSelect,NSInteger interger);// 品牌选择
 
 NS_ASSUME_NONNULL_BEGIN

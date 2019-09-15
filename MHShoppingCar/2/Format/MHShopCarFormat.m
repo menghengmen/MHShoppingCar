@@ -35,7 +35,19 @@
 
 -(void)selectProductWith:(NSIndexPath *)index isSelected:(BOOL)selected{
     
-
+    MHBrandModel *brandModel = self.shopcartListArray[0];
+    MHProductModel *productModel = brandModel.products[1];
+    productModel.isSelected = selected;
+    
+    BOOL isBrandSelected = YES;
+    
+    for (MHProductModel *aProductModel in brandModel.products) {
+        if (aProductModel.isSelected == NO) {
+            isBrandSelected = NO;
+        }
+    }
+    
+    brandModel.isSelect = isBrandSelected;
     
     
     

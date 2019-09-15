@@ -19,12 +19,6 @@
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     MHShopCarCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MHShopCarCell"];
     __weak typeof (self) WeakSelf = self;
-    cell.productBlock = ^(BOOL isSelected) {
-        if (WeakSelf.productSelectBlock) {
-            WeakSelf.productSelectBlock(isSelected, indexPath);
-        }
-    };
-    
     MHBrandModel *brandModel = self.dataArray[indexPath.section];
     NSArray *productArray = brandModel.products;
     if (productArray.count > indexPath.row) {
@@ -33,6 +27,14 @@
         NSString *productSize = [NSString stringWithFormat:@"W:%ld H:%ld D:%ld", productModel.specWidth, productModel.specHeight, productModel.specLength];
         [cell configureShopcartCellWithProductURL:productModel.productPicUri productName:productName productSize:productSize productPrice:productModel.productPrice productCount:productModel.productQty productStock:productModel.productStocks productSelected:productModel.isSelected];
     }
+   
+    cell.productBlock = ^(BOOL isSelected) {
+        if (WeakSelf.productSelectBlock) {
+            WeakSelf.productSelectBlock(isSelected, indexPath);
+        }
+    };
+    
+    
     return cell;
     
 }
