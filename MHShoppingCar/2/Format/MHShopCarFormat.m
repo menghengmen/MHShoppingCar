@@ -9,6 +9,7 @@
 #import "MHShopCarFormat.h"
 #import "MHBrandModel.h"
 #import <MJExtension/MJExtension.h>
+#import <UIKit/UIKit.h>
 
 @interface MHShopCarFormat()
 
@@ -35,8 +36,8 @@
 
 -(void)selectProductWith:(NSIndexPath *)index isSelected:(BOOL)selected{
     
-    MHBrandModel *brandModel = self.shopcartListArray[0];
-    MHProductModel *productModel = brandModel.products[1];
+    MHBrandModel *brandModel = self.shopcartListArray[index.section];
+    MHProductModel *productModel = brandModel.products[index.row];
     productModel.isSelected = selected;
     
     BOOL isBrandSelected = YES;
@@ -48,10 +49,25 @@
     }
     
     brandModel.isSelect = isBrandSelected;
+    [self.delegate shopCarIsAllSelected:[self isAllSelected]];
     
     
     
 
+}
+
+-(BOOL)isAllSelected{
+    if (self.shopcartListArray.count == 0) {
+        return NO;
+    }
+    BOOL isBrandSelected = YES;
+       
+       for (MHBrandModel *brandModel in self.shopcartListArray) {
+           if (brandModel.isSelect == NO) {
+               isBrandSelected = NO;
+           }
+       }
+    return  isBrandSelected;
 }
 
 @end

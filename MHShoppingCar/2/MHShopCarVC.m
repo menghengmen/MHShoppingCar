@@ -46,6 +46,10 @@
     [self.shopCarTableView reloadData];
 }
 
+-(void)shopCarIsAllSelected:(BOOL)isAllSelected{
+    
+}
+
 
 
 #pragma mark lazy init
