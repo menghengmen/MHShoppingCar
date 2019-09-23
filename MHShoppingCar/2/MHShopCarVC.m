@@ -47,7 +47,7 @@
 }
 
 -(void)shopCarIsAllSelected:(BOOL)isAllSelected{
-    
+    [self.shopCarTableView reloadData];
 }
 
 

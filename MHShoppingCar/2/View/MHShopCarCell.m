@@ -66,11 +66,10 @@
 
 
 - (void)productSelectButtonAction {
-    if (self.productBlock) {
-        self.productBlock(self.productSelectButton.selected);
-    }
-    self.productSelectButton.selected = !self.productSelectButton.isSelected;
-   
+  self.productSelectButton.selected = !self.productSelectButton.isSelected;
+  if (self.productBlock) {
+          self.productBlock(self.productSelectButton.selected);
+      }
 }
 
 - (UIButton *)productSelectButton
