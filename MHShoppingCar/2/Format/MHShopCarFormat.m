@@ -50,10 +50,6 @@
     
     brandModel.isSelect = isBrandSelected;
     [self.delegate shopCarIsAllSelected:[self isAllSelected]];
-    
-    
-    
-
 }
 
 -(BOOL)isAllSelected{
@@ -61,8 +57,7 @@
         return NO;
     }
     BOOL isBrandSelected = YES;
-       
-       for (MHBrandModel *brandModel in self.shopcartListArray) {
+    for (MHBrandModel *brandModel in self.shopcartListArray) {
            if (brandModel.isSelect == NO) {
                isBrandSelected = NO;
            }
